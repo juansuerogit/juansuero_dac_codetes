@@ -1,0 +1,20 @@
+{
+  "name": "dacccodetest",
+  "version": "1.0.0",
+  "description": "dacccodetest",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel security-check dacccodetest",
+    "dacccodetest": "node app/dacccodetest.js",
+    "security-check": "nsp check"
+  },
+  "author": "Juan Suero",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^2.3.2",
+    "csv": "^0.3.7",
+    "easy-table": "^1.1.1",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.2.1"
+  }
+}
